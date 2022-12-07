@@ -12,6 +12,10 @@ public class MyApp {
         System.out.println(messageService.getMessage());
         System.out.println(messageService1.getMessage());
 
+        System.out.println(messageService.hashCode());
+        System.out.println(messageService1.hashCode());
+
+
         applicationContext.close();
 
     }
