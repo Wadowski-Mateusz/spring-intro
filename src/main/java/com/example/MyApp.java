@@ -8,9 +8,11 @@ public class MyApp {
         ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         MessageService messageService = applicationContext.getBean("messageService", MessageService.class);
-
+        MessageService messageService1 = applicationContext.getBean("messageService", MessageService.class);
         System.out.println(messageService.getMessage());
+        System.out.println(messageService1.getMessage());
 
         applicationContext.close();
+
     }
 }
